@@ -1,7 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import Home from './pages/Home'
+
 ReactDOM.render(
-    <h1>Olá React"</h1>,
+    <>
+        <Home />
+    </>,
     document.getElementById('root')
 )
