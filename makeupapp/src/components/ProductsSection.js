@@ -8,9 +8,13 @@ const useStyles = makeStyles(() => ({
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
+      marginTop: '10px',
     },
     smallCardsContainer: {
         display: 'flex',
+        width: '337px',
+        justifyContent: 'space-between',
+        marginTop: '10px',
     }
   }));
 
@@ -20,7 +24,6 @@ const ProductsSection = () => {
         <div className={classes.root}>
             <BigProductCard />
             <div className={classes.smallCardsContainer}>
-                <SmallProductCard />
                 <SmallProductCard />
                 <SmallProductCard />
                 <SmallProductCard />
