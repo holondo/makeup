@@ -7,9 +7,11 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import styled from 'styled-components';
 
-const StyledCardContent = styled(CardContent)`
+const StyledCard = styled(Card)`
+  background-color: #F0F0F0;
+
   .MuiCardContent-root {
-    background-color: #F0F0F0
+    padding: 8px;
   }
 `
 
@@ -23,6 +25,7 @@ const useStyles = makeStyles({
   media: {
     height: 165,
     borderRadius: '30px',
+    filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
   },
   brandName: {
     
@@ -33,7 +36,7 @@ const ProductCard = () => {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <StyledCard className={classes.root}>
       
       <CardActionArea>
         <CardMedia
@@ -41,16 +44,16 @@ const ProductCard = () => {
           image="/images/red-lipstick.PNG"
           title="Contemplative Reptile"
         />
-        <StyledCardContent>
+        <CardContent>
           <Typography gutterBottom variant="subtitle2" color="textSecondary" component="p" align="center">
             Batom Matte
           </Typography>
           <Typography variant="subtitle1" component="h2" color="textPrimary" align="center">
             R$49,99
           </Typography>
-        </StyledCardContent>
+        </CardContent>
       </CardActionArea>
-    </Card>
+    </StyledCard>
   );
 }
 
