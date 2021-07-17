@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './pages/Home'
+import Catalog from './pages/Catalog'
 import NavBar from './components/NavBar'
 import Header from './components/Header'
 import { makeStyles } from '@material-ui/core/styles';
@@ -20,8 +21,8 @@ const App = () => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <Header />
-            <Home />
+            <Header showFilters={true}/>
+            <Catalog />
             <NavBar />
         </div>
     )
