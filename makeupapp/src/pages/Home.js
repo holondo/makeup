@@ -5,13 +5,13 @@ import BottomNavigation from '@material-ui/core/BottomNavigation';
 import ProductSection from '../components/ProductsSection';
 
 const useStyles = makeStyles(() => ({
-  root: {
+  home: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
     height: '100%'
   },
-  home: {
+  homeContainer: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -23,9 +23,9 @@ const useStyles = makeStyles(() => ({
 const Home = () => {
   const classes = useStyles();
     return (
-      <div className={classes.root}>
+      <div className={classes.home}>
         <Toolbar />
-        <div className={classes.home}>
+        <div className={classes.homeContainer}>
           <h3>Promoção</h3>
           <ProductSection />
           <h3>Mais Vendidos</h3>

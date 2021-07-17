@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './pages/Home'
 import Catalog from './pages/Catalog'
+import Products from './pages/Products'
 import NavBar from './components/NavBar'
 import Header from './components/Header'
 import { makeStyles } from '@material-ui/core/styles';
@@ -22,7 +23,7 @@ const App = () => {
     return (
         <div className={classes.root}>
             <Header showFilters={true}/>
-            <Catalog />
+            <Products />
             <NavBar />
         </div>
     )

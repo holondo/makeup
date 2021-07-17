@@ -19,7 +19,7 @@ const useStyles = makeStyles(() => ({
     alignItems: 'center',
     width: '100%',
   },
-  brandsContainer: {
+  brandsGrid: {
     width: '100%',
     height: '100%',
     backgroundColor: '#fff',
@@ -28,6 +28,11 @@ const useStyles = makeStyles(() => ({
     gridRow: 'auto auto', 
     gridColumnGap: '18px',
     gridRowGap: '18px',
+  },
+  filtersBalance: {
+    display: 'inline-block',
+    width: '100%',
+    height: '41px',
   }
 }));
 
@@ -36,10 +41,10 @@ const Catalog = () => {
   return (
     <div className={classes.catalog}>
       <Toolbar />
-      <Toolbar />
+      <div style={{height: '41px'}} className={classes.filtesBalance}>&nbsp;</div>
       <div className={classes.catalogContainer}>
         <LeftMenu />
-        <div className={classes.brandsContainer}>
+        <div className={classes.brandsGrid}>
           <SmallBrandCard />
           <SmallBrandCard />
           <SmallBrandCard />
