@@ -6,7 +6,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import SubscriptionsIcon from '@material-ui/icons/Subscriptions';
 import PersonIcon from '@material-ui/icons/Person';
 import AccountTreeIcon from '@material-ui/icons/AccountTree';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, createTheme, ThemeProvider } from '@material-ui/core/styles';
 
 
 const useStyles = makeStyles(() => ({
@@ -15,8 +15,20 @@ const useStyles = makeStyles(() => ({
         position: 'fixed',
         bottom: 0,
         right: 0,
+        backgroundColor: 'black'
       },
   }));
+
+const NavBarTheme = createTheme({
+  palette: {
+    primary: {
+      main: '#fff',
+    },
+    secundary: {
+      main: '#000',
+    }
+  }
+});  
 
 const NavBar = () => {
   const classes = useStyles();
@@ -27,7 +39,8 @@ const NavBar = () => {
   };
 
   return (
-    <BottomNavigation className={classes.stickToBottom} sx={{ width: 500 }} value={value} onChange={handleChange}>
+    <ThemeProvider theme={NavBarTheme}>
+      <BottomNavigation className={classes.stickToBottom} sx={{ width: 500 }} value={value} onChange={handleChange} >
       <BottomNavigationAction
         className={classes.option}
         label="Home"
@@ -38,24 +51,25 @@ const NavBar = () => {
         className={classes.option}
         label="Dicas"
         value="dicas"
-        icon={<SubscriptionsIcon />}
+        icon={<SubscriptionsIcon color='primary'/>}
       />
       <BottomNavigationAction
         className={classes.option}
         label="Categorias"
         value="categorias"
-        icon={<AccountTreeIcon />}
+        icon={<AccountTreeIcon color='primary'/>}
       />
       <BottomNavigationAction
         className={classes.option}
         label="Favoritos"
         value="favoritos"
-        icon={<FavoriteIcon />}
+        icon={<FavoriteIcon color='primary'/>}
       />
       <BottomNavigationAction 
       className={classes.option}
-      label="Perfil" value="perfil" icon={<PersonIcon />} />
+      label="Perfil" value="perfil" icon={<PersonIcon color='primary'/>} />
     </BottomNavigation>
+    </ThemeProvider>
   );
 }
 

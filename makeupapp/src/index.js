@@ -1,13 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-import Home from './pages/Home'
-import NavBar from './components/NavBar'
+import App from './App';
 
 ReactDOM.render(
     <>
-        <Home />
-        <NavBar />
+        <App />
     </>,
     document.getElementById('root')
 )

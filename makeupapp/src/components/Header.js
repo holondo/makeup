@@ -11,29 +11,37 @@ import LocalMallIcon from '@material-ui/icons/LocalMall';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    color: 'white',
   },
   menuButton: {
     marginRight: theme.spacing(2),
   },
   title: {
     flexGrow: 1,
+    color: 'black',
   },
 }));
+
+
 
 const Header = () => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-          <AppBar position="fixed">
+          <AppBar position="fixed" color="inherit">
             <Toolbar>
-              <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+              <IconButton edge="start" className={classes.menuButton} color="default" aria-label="menu">
                 <FavoriteBorderIcon />
               </IconButton>
               <Typography variant="h6" className={classes.title}>
                 Magic Make
               </Typography>
-              <SearchIcon />
-              <LocalMallIcon />
+              <IconButton edge="start" className={classes.menuButton} color="default" aria-label="menu">
+                <SearchIcon />
+              </IconButton>
+              <IconButton edge="start" className={classes.menuButton} color="default" aria-label="menu">
+                <LocalMallIcon />
+              </IconButton>
             </Toolbar>
           </AppBar>
         </div>
