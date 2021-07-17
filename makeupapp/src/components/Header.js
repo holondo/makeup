@@ -28,7 +28,7 @@ const Header = () => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-          <AppBar position="fixed" color="inherit">
+          <AppBar color="inherit" position='fixed'>
             <Toolbar>
               <IconButton edge="start" className={classes.menuButton} color="default" aria-label="menu">
                 <FavoriteBorderIcon />
