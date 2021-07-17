@@ -3,19 +3,19 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
     card: {
-        height: '102px',
-        width: '337px',
-        filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
+        height: '92px',
+        width: '92px',
         borderRadius: '30px',
+        filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
         backgroundColor: 'red',
     }
   }));
 
-const BigProductCard = () => {
-  const classes = useStyles();
+const SmallBrandCard = () => {
+    const classes = useStyles();
     return (
         <div className={classes.card} />
     )
 }
 
-export default BigProductCard;
+export default SmallBrandCard;

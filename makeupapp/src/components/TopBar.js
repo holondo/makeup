@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
+    minHeight: props => props.showFilters ? '100px' : '',
   },
   title: {
     flexGrow: 1,

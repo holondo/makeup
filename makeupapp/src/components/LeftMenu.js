@@ -11,6 +11,10 @@ const StyledDrawer = styled(Drawer)`
   .MuiDrawer-paper {
     top: 90px;
     height: calc(100vh - 146px);
+    background-color: #F0F0F0;
+  }
+  .MuiList-padding {
+    padding-top: 0px;
   }
 `
 const drawerWidth = 140;
@@ -39,8 +43,8 @@ const LeftMenu = () => {
       <div className={classes.toolbar} />
       <Divider />
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem button key={text}>
+        {['Batom Líquido', 'Batom Bala', 'Lápis de Boca', 'Gloss'].map((text, index) => (
+          <ListItem button key={text} divider='true' alignItems='center'>
             <ListItemText primary={text} />
           </ListItem>
         ))}

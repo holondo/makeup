@@ -5,7 +5,8 @@ const useStyles = makeStyles(() => ({
     card: {
         height: '102px',
         width: '102px',
-        borderRadius: '10px',
+        borderRadius: '30px',
+        filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
         backgroundColor: 'red',
     }
   }));
