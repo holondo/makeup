@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
-import SmallBrandCard from '../components/SmallBrandCard'
 import ProductCard from '../components/ProductCard';
 import Typography from '@material-ui/core/Typography';
 
