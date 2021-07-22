@@ -4,7 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import ProductCard from '../components/ProductCard';
 import Typography from '@material-ui/core/Typography';
-
+import Header from '../components/Header'
 
 
 
@@ -49,6 +49,7 @@ const Products = () => {
   const classes = useStyles();
   return (
     <div className={classes.products}>
+      <Header showFilters={true}/>
       <Toolbar />
       <div style={{ height: '41px' }} className={classes.filtesBalance}>&nbsp;</div>
       <div className={classes.brandNameContainer}>

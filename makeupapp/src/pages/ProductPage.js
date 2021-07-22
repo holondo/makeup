@@ -8,6 +8,7 @@ import PriceAndEvaluation from '../components/PriceAndEvaluation';
 import ColorPicker from '../components/ColorPicker';
 import AvailabilityAndFavorites from '../components/AvailabilityAndFavorites';
 import ProductTips from '../components/ProductTips';
+import Header from '../components/Header'
 
 
 const useStyles = makeStyles(() => ({
@@ -33,6 +34,7 @@ const ProductPage = () => {
   const classes = useStyles();
     return (
       <div className={classes.productPage}>
+        <Header showFilters={false}/>
         <Toolbar />
         <LargeProductCard />
         <Typography className={classes.typography} variant="body1" component="h2" color="textPrimary" align="center">

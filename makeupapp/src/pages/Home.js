@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import ProductSection from '../components/ProductsSection';
+import Header from '../components/Header'
+
 
 const useStyles = makeStyles(() => ({
   home: {
@@ -24,6 +26,7 @@ const Home = () => {
   const classes = useStyles();
     return (
       <div className={classes.home}>
+        <Header showFilters={false}/>
         <Toolbar />
         <div className={classes.homeContainer}>
           <h3>Promoção</h3>

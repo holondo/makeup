@@ -5,6 +5,7 @@ import BottomNavigation from '@material-ui/core/BottomNavigation';
 
 import LeftMenu from '../components/LeftMenu'
 import SmallBrandCard from '../components/SmallBrandCard'
+import Header from '../components/Header'
 
 const useStyles = makeStyles(() => ({
   catalog: {
@@ -40,6 +41,7 @@ const Catalog = () => {
   const classes = useStyles();
   return (
     <div className={classes.catalog}>
+      <Header showFilters={true}/>
       <Toolbar />
       <div style={{height: '41px'}} className={classes.filtesBalance}>&nbsp;</div>
       <div className={classes.catalogContainer}>
