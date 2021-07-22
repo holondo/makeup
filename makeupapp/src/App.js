@@ -5,7 +5,7 @@ import Products from './pages/Products'
 import ProductPage from './pages/ProductPage'
 import NavBar from './components/NavBar'
 import { makeStyles } from '@material-ui/core/styles';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 
 const useStyles = makeStyles(() => ({

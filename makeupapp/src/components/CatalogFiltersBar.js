@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const CatalogFilters = () => {
+const CatalogFiltersBar = () => {
   const classes = useStyles();
   return (
     <div className={classes.filters}>
@@ -25,4 +25,4 @@ const CatalogFilters = () => {
 
 }
 
-export default CatalogFilters;
+export default CatalogFiltersBar;

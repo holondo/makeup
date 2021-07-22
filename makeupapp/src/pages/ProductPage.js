@@ -34,7 +34,7 @@ const ProductPage = () => {
   const classes = useStyles();
     return (
       <div className={classes.productPage}>
-        <Header showFilters={false}/>
+        <Header showCatalogFilters={false}/>
         <Toolbar />
         <LargeProductCard />
         <Typography className={classes.typography} variant="body1" component="h2" color="textPrimary" align="center">

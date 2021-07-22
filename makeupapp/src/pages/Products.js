@@ -5,7 +5,7 @@ import BottomNavigation from '@material-ui/core/BottomNavigation';
 import ProductCard from '../components/ProductCard';
 import Typography from '@material-ui/core/Typography';
 import Header from '../components/Header'
-
+import { Link } from "react-router-dom";
 
 
 const useStyles = makeStyles(() => ({
@@ -49,21 +49,34 @@ const Products = () => {
   const classes = useStyles();
   return (
     <div className={classes.products}>
-      <Header showFilters={true}/>
+      <Header showProductsFilters={true} />
       <Toolbar />
       <div style={{ height: '41px' }} className={classes.filtesBalance}>&nbsp;</div>
       <div className={classes.brandNameContainer}>
         <Typography variant="body1" component="h2" color="textPrimary" align="center">
-            MAC (150 produtos)
+          MAC (150 produtos)
         </Typography>
       </div>
       <div className={classes.productContainer}>
         <div className={classes.productsGrid}>
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          <Link to="/product">
+            <ProductCard />
+          </Link>
+          <Link to="/product">
+            <ProductCard />
+          </Link>
+          <Link to="/product">
+            <ProductCard />
+          </Link>
+          <Link to="/product">
+            <ProductCard />
+          </Link>
+          <Link to="/product">
+            <ProductCard />
+          </Link>
+          <Link to="/product">
+            <ProductCard />
+          </Link>
         </div>
       </div>
       <BottomNavigation />

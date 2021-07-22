@@ -26,7 +26,7 @@ const Home = () => {
   const classes = useStyles();
     return (
       <div className={classes.home}>
-        <Header showFilters={false}/>
+        <Header />
         <Toolbar />
         <div className={classes.homeContainer}>
           <h3>Promoção</h3>

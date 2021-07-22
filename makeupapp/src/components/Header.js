@@ -2,8 +2,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import CatalogFilters from './CatalogFilters'
-import TopBar from './TopBar'
+import CatalogFiltersBar from './CatalogFiltersBar';
+import ProductsFiltersBar from './ProductsFiltersBar';
+import TopBar from './TopBar';
 
 const useStyles = makeStyles((theme) => ({
   header: {
@@ -15,20 +16,22 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'center',
-    minHeight: props => props.showFilters ? '100px' : '',
+    minHeight: props => (props.showCatalogFilters || props.showProductsFilters) ? '100px' : '',
   },
 }));
 
 
 
-const Header = ({ showFilters }) => {
-  const classes = useStyles(showFilters);
+const Header = ({ showCatalogFilters = false, showProductsFilters = false }) => {
+  const classes = useStyles(showCatalogFilters, showProductsFilters);
   return (
     <div className={classes.header}>
       <AppBar color="inherit" position='fixed'>
         <Toolbar className={classes.toolbar}>
           <TopBar />
-          {showFilters ? <CatalogFilters /> : null}
+          {[showCatalogFilters ? <CatalogFiltersBar /> : null,
+          showProductsFilters ? <ProductsFiltersBar /> : null
+          ]}
         </Toolbar>
       </AppBar>
     </div>
