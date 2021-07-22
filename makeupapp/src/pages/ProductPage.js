@@ -14,7 +14,6 @@ const useStyles = makeStyles(() => ({
   productPage: {
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between',
     height: '100%',
     alignItems: 'center'
   },
@@ -42,11 +41,11 @@ const ProductPage = () => {
         <PriceAndEvaluation />
         <ColorPicker />
         <AvailabilityAndFavorites />
-        <BottomNavigation />
         <Typography className={classes.typography} variant="body1" component="h2" color="textPrimary" align="center">
-           Batom Cremoso
+           Dicas de Influencers
         </Typography>
         <ProductTips />
+        <BottomNavigation />
         
       </div>
       );
