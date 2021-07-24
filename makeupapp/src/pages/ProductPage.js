@@ -9,6 +9,7 @@ import ColorPicker from '../components/ColorPicker';
 import AvailabilityAndFavorites from '../components/AvailabilityAndFavorites';
 import ProductTips from '../components/ProductTips';
 import Header from '../components/Header'
+import AddToCardButton from '../components/AddToCartButton'
 
 
 const useStyles = makeStyles(() => ({
@@ -47,8 +48,9 @@ const ProductPage = () => {
            Dicas de Influencers
         </Typography>
         <ProductTips />
+        <AddToCardButton />
         <BottomNavigation />
-        
+        <BottomNavigation />
       </div>
       );
 }
