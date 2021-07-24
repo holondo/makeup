@@ -10,12 +10,15 @@ const useStyles = makeStyles(() => ({
     flexDirection: 'column',
     alignItems: 'center',
     marginTop: '10px',
+    minWidth: '100vw',
   },
   smallCardsContainer: {
     display: 'flex',
-    width: '337px',
     justifyContent: 'space-between',
     marginTop: '10px',
+    marginLeft: '5vw',
+    marginRight: '5vw',
+    minWidth: '90vw',
   }
 }));
 

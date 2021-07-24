@@ -14,8 +14,8 @@ const useStyles = makeStyles(() => ({
       flexDirection: 'column',
       justifyContent: 'space-between',
       alignItems: 'center',
-      width: '100%',
-      hight: '100%',
+      minWidth: '100vw',
+      minHeight: '100vh',
     },
   }));
 

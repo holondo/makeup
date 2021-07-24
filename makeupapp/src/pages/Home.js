@@ -11,13 +11,14 @@ const useStyles = makeStyles(() => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    height: '100%'
+    minWidth: '100vw',
+    minHeight: '100vh',
   },
   homeContainer: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    width: '100%',
+    minWidth: '100vw',
     overflowY: 'scroll',
   },
 }));

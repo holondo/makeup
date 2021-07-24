@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'center',
-    minHeight: props => (props.showCatalogFilters || props.showProductsFilters) ? '100px' : '',
+    minHeight: props => (props.showCatalogFilters || props.showProductsFilters) ? '10px' : '',
   },
 }));
 

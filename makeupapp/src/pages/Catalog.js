@@ -13,12 +13,10 @@ const useStyles = makeStyles(() => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    height: '100%'
   },
   catalogContainer: {
     display: 'flex',
     flexDirection: 'row',
-    alignItems: 'center',
     width: '100%',
   },
   brandsGrid: {
@@ -26,10 +24,10 @@ const useStyles = makeStyles(() => ({
     height: '100%',
     backgroundColor: '#fff',
     display: 'grid',
-    gridTemplateColumns: '92px 92px',
+    gridTemplateColumns: '13vh 13vh',
     gridRow: 'auto auto',
-    gridColumnGap: '18px',
-    gridRowGap: '18px',
+    gridColumnGap: '3vh',
+    gridRowGap: '3vh',
   },
   filtersBalance: {
     display: 'inline-block',
