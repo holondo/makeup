@@ -29,8 +29,8 @@ const useStyles = makeStyles(() => ({
     display: 'grid',
     gridTemplateColumns: '170px 170px',
     gridRow: 'auto auto',
-    gridColumnGap: '13px',
-    gridRowGap: '15px',
+    gridColumnGap: '2vh',
+    gridRowGap: '2vh',
   },
   filtersBalance: {
     display: 'inline-block',

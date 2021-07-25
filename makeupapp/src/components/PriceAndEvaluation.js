@@ -6,14 +6,13 @@ import CustomizedRatings from './CustomizedRatings';
 
 const useStyles = makeStyles(() => ({
   priceAndEvaluationRow: {
-    width: '100%',
+    width: '85%',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between'
   },
   typography: {
     marginTop: '5px',
-    marginLeft: '10px'
   },
 }));
 

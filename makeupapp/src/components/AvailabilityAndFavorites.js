@@ -29,7 +29,7 @@ height: 27px
 
 const useStyles = makeStyles(() => ({
   availabilityAndFavorites: {
-    width: '90%',
+    width: '80%',
     borderRadius: '30px',
     display: 'flex',
     flexDirection: 'row',

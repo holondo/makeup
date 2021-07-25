@@ -4,13 +4,14 @@ import ProfileCircle from './ProfileCircle';
 
 const useStyles = makeStyles(() => ({
     card: {
-        height: '150px',
-        width: '337px',
+        height: '20vh',
+        width: '90%',
         borderRadius: '30px',
         backgroundColor: '#F0F0F0',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
+        marginTop: '5px',
     },
     profileRow: {
       width: '100%',

@@ -16,7 +16,8 @@ const useStyles = makeStyles(() => ({
   productPage: {
     display: 'flex',
     flexDirection: 'column',
-    height: '100%',
+    maxHeight: '100vh',
+    width: '100vw',
     alignItems: 'center'
   },
   homeContainer: {
@@ -24,6 +25,7 @@ const useStyles = makeStyles(() => ({
     flexDirection: 'column',
     alignItems: 'center',
     width: '100%',
+    height: '100%',
     overflowY: 'scroll',
   },
   typography: {
