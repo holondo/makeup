@@ -6,6 +6,7 @@ import ProductCard from '../components/ProductCard';
 import Typography from '@material-ui/core/Typography';
 import Header from '../components/Header'
 import { Link } from "react-router-dom";
+import Text from '../components/Text';
 
 
 const useStyles = makeStyles(() => ({
@@ -53,9 +54,7 @@ const Products = () => {
       <Toolbar />
       <div style={{ height: '41px' }} className={classes.filtesBalance}>&nbsp;</div>
       <div className={classes.brandNameContainer}>
-        <Typography variant="body1" component="h2" color="textPrimary" align="center">
-          MAC (150 produtos)
-        </Typography>
+        <Text text="MAC (6 produtos)" />
       </div>
       <div className={classes.productContainer}>
         <div className={classes.productsGrid}>

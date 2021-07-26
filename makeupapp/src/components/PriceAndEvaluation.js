@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import CustomizedRatings from './CustomizedRatings';
+import Text from './Text';
 
 
 const useStyles = makeStyles(() => ({
@@ -20,9 +21,7 @@ const PriceAndEvaluation = () => {
   const classes = useStyles();
   return (
     <div className={classes.priceAndEvaluationRow} >
-      <Typography className={classes.typography} variant="h5" component="h5" color="textPrimary" align="center">
-        R$49,99
-      </Typography>
+      <Text text="R$49,99" large/>
       <CustomizedRatings />
     </div>
   )

@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-
+import Text from './Text';
 
 const useStyles = makeStyles(() => ({
   colorPickerBackground: {
@@ -64,18 +64,14 @@ const ColorPicker = () => {
   const classes = useStyles();
   return (
     <div className={classes.colorPickerBackground}>
-      <Typography className={classes.typography} variant="body1" component="h2" color="textPrimary" align="center">
-        Cor:
-      </Typography>
+      <Text text="Cor:" />
       <div className={classes.colorsAndMore}>
         <div className={classes.color1} />
         <div className={classes.color2} />
         <div className={classes.color3} />
         <div className={classes.color4} />
         <div className={classes.color5} />
-        <Typography className={classes.typography} variant="body1" component="h2" color="textSecundary" align="center">
-          Mais >
-        </Typography>
+        <Text text="Mais >" />
       </div>
     </div>
   )

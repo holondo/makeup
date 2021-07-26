@@ -3,6 +3,7 @@ import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import styled from 'styled-components';
 import { Button } from '@material-ui/core';
+import Text from './Text';
 
 
 const StyledButton = withStyles({
@@ -23,8 +24,9 @@ const FavoritesButton = styled(Button)`
 color: white;
 background: linear-gradient(45deg, #000 30%, #000 90%);
 border-radius: 30px;
-width: 196px;
-height: 27px
+width: 65%;
+height: 4vh;
+font-size: '2.5vh'
 `;
 
 const useStyles = makeStyles(() => ({
@@ -44,10 +46,8 @@ const AvailabilityAndFavorites = () => {
   const classes = useStyles();
   return (
     <div className={classes.availabilityAndFavorites}>
-      <Typography className={classes.typography} variant="body1" component="h2" color="textPrimary" align="center">
-        Em estoque
-      </Typography>
-      <FavoritesButton >+ Favoritos</FavoritesButton>
+      <Text text="Em estoque" />
+      <FavoritesButton  style={{ fontSize: '2vh' }}>+ Favoritos</FavoritesButton>
     </div>
   )
 }

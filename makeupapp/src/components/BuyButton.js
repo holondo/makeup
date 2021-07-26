@@ -6,6 +6,7 @@ const StyledButton = withStyles({
   root: {
     color: 'white',
     background: 'linear-gradient(45deg, #000 30%, #000 90%)',
+    filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
     borderRadius: '30px',
     width: '50vw',
     height: '8vh',
@@ -17,10 +18,10 @@ const StyledButton = withStyles({
 
 
 
-const AddToCardButton = () => {
+const BuyButton = () => {
   return (
-    <StyledButton style={{ fontSize: '2vh' }} >Adicionar à Sacola</StyledButton>
+    <StyledButton style={{ fontSize: '2vh' }} >Finalizar Compra</StyledButton>
   )
 }
 
-export default AddToCardButton;
+export default BuyButton;
