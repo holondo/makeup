@@ -50,7 +50,7 @@ const Products = () => {
   const classes = useStyles();
   return (
     <div className={classes.products}>
-      <Header showProductsFilters={true} text="Produtos" back/>
+      <Header showProductsFilters={true} text="Produtos" back />
       <Toolbar />
       <div style={{ height: '41px' }} className={classes.filtesBalance}>&nbsp;</div>
       <div className={classes.brandNameContainer}>
@@ -59,22 +59,22 @@ const Products = () => {
       <div className={classes.productContainer}>
         <div className={classes.productsGrid}>
           <Link to="/product">
-            <ProductCard />
+            <ProductCard path="/images/red-lipstick.PNG" title="Batom Matte" />
           </Link>
           <Link to="/product">
-            <ProductCard />
+            <ProductCard path="/images/home1.jpg" title="Batom Fogo"/>
           </Link>
           <Link to="/product">
-            <ProductCard />
+            <ProductCard path="/images/home4.jpg" title="Kit Neutro"/>
           </Link>
           <Link to="/product">
-            <ProductCard />
+            <ProductCard path="/images/home5.jpg" title="Kit Inverno"/>
           </Link>
           <Link to="/product">
-            <ProductCard />
+            <ProductCard path="/images/batom2.jpg" title="Batom Areia"/>
           </Link>
           <Link to="/product">
-            <ProductCard />
+            <ProductCard path="/images/home2.jpg" title="Kit Gold"/>
           </Link>
         </div>
       </div>

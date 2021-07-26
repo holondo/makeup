@@ -22,22 +22,22 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const ProductsSection = () => {
+const ProductsSection = ({path1, path2, path3, path4}) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
       <Link to="/product">
-        <BigProductCard />
+        <BigProductCard path={path1}/>
       </Link>
       <div className={classes.smallCardsContainer}>
         <Link to="/product">
-          <SmallProductCard />
+          <SmallProductCard path={path2}/>
         </Link>
         <Link to="/product">
-          <SmallProductCard />
+          <SmallProductCard path={path3}/>
         </Link>
         <Link to="/product">
-          <SmallProductCard />
+          <SmallProductCard path={path4}/>
         </Link>
       </div>
     </div>

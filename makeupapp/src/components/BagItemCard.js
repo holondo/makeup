@@ -4,6 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Text from './Text';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     backgroundColor: '#F0F0F0',
     padding: '0 16px !important',
-    height: '100%'
+    height: '100%',
   },
   cover: {
     width: '23vh',
@@ -32,6 +33,16 @@ const useStyles = makeStyles((theme) => ({
   lastRow: {
     display: 'flex',
     justifyContent: 'space-between',
+  },
+  firstRow: {
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+  link: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textDecoration: 'none',
   }
 }));
 
@@ -40,23 +51,31 @@ const BagItemCard = () => {
   const theme = useTheme();
 
   return (
-    <Card className={classes.root}>
-      <CardMedia
-        className={classes.cover}
-        image="/images/red-lipstick.PNG"
-        title="Live from space album cover"
-      />
-      <div className={classes.details}>
-        <CardContent className={classes.content}>
-          <Text text="Batom Matte" bold/>
-          <Text text="COR: VERMELHO" />
-          <div className={classes.lastRow}>
-            <Text text="QUANTIDADE: 1" />
-            <Text text="R$49,99" bold/>
-          </div>
-        </CardContent>
-      </div>
-    </Card>
+    <Link className={classes.link}>
+      <Card className={classes.root}>
+        <CardMedia
+          className={classes.cover}
+          image="/images/red-lipstick.PNG"
+          title="Live from space album cover"
+        />
+        <div className={classes.details}>
+          <CardContent className={classes.content}>
+            <div className={classes.firstRow}>
+              <Text text="Batom Matte" bold />
+              <Link className={classes.link}>
+                <Text text="X" bold link='' />
+              </Link>
+            </div>
+            <Text text="COR: VERMELHO" />
+            <div className={classes.lastRow}>
+              <Text text="QUANTIDADE: 1" />
+              <Text text="R$49,99" bold />
+            </div>
+          </CardContent>
+        </div>
+      </Card>
+    </Link>
+
   );
 }
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Text from './Text';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(() => ({
   colorPickerBackground: {
@@ -57,6 +58,11 @@ const useStyles = makeStyles(() => ({
     marginRight: '10px',
     backgroundColor: '#C90DFA',
   },
+  link: {
+    display: 'flex',
+    alignItems: 'center',
+    textDecoration: 'none',
+  }
 }));
 
 
@@ -66,12 +72,24 @@ const ColorPicker = () => {
     <div className={classes.colorPickerBackground}>
       <Text text="Cor:" />
       <div className={classes.colorsAndMore}>
-        <div className={classes.color1} />
-        <div className={classes.color2} />
-        <div className={classes.color3} />
-        <div className={classes.color4} />
-        <div className={classes.color5} />
-        <Text text="Mais >" />
+        <Link>
+          <div className={classes.color1} />
+        </Link>
+        <Link>
+          <div className={classes.color2} />
+        </Link>
+        <Link>
+          <div className={classes.color3} />
+        </Link>
+        <Link>
+          <div className={classes.color4} />
+        </Link>
+        <Link>
+          <div className={classes.color5} />
+        </Link>
+        <Link className={classes.link}>
+          <Text text="Mais >" />
+        </Link>
       </div>
     </div>
   )

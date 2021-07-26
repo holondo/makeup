@@ -18,6 +18,8 @@ const useStyles = makeStyles(() => ({
   homeContainer: {
     display: 'flex',
     flexDirection: 'column',
+    justifyContent: 'flex-start',
+    height: '85vh',
     alignItems: 'center',
     minWidth: '100vw',
     overflowY: 'scroll',
@@ -31,12 +33,21 @@ const Home = () => {
         <Header />
         <Toolbar />
         <div className={classes.homeContainer}>
-          <Text text="Promoção" />
-          <ProductSection />
-          <Text text="Promoção" />
-          <ProductSection />
-          <Text text="Mais vendidos" />
-          <ProductSection />
+          <Text text="Promoção" large/>
+          <ProductSection 
+            path1='url("/images/Promo 1.PNG")'
+            path2='url("/images/home1.jpg")'
+            path3='url("/images/home2.jpg")'
+            path4='url("/images/home3.jpg")'
+          />
+          <Text text="Mais Vendidos" large/>
+          <ProductSection 
+            path1='url("/images/promocao2.jpg")'
+            path2='url("/images/home4.jpg")'
+            path3='url("/images/home5.jpg")'
+            path4='url("/images/home6.jpg")'
+          />
+          
         </div>
         <BottomNavigation />
       </div>

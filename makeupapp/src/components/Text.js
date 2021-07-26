@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
   text: {
-    fontFamily: 'Arial, Helvetica, sans-serif',
+    fontFamily: 'Helvetica',
     fontSize: props => (props.large) ? '4vh' : '2.5vh',
     marginTop: '10px',
     marginBottom: '10px',

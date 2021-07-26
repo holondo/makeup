@@ -40,26 +40,36 @@ const Catalog = () => {
   const classes = useStyles();
   return (
     <div className={classes.catalog}>
-      <Header showCatalogFilters={true} text="Catálogo"/>
+      <Header showCatalogFilters={true} text="Catálogo" />
       <Toolbar />
       <div style={{ height: '41px' }} className={classes.filtesBalance}>&nbsp;</div>
       <div className={classes.catalogContainer}>
         <LeftMenu />
         <div className={classes.brandsGrid}>
           <Link to="/products">
-            <SmallBrandCard />
+            <SmallBrandCard
+              path='url("/images/Todas.JPG")'
+            />
           </Link>
           <Link to="/products">
-            <SmallBrandCard />
+            <SmallBrandCard
+              path='url("/images/MAC.JPG")'
+            />
           </Link>
           <Link to="/products">
-            <SmallBrandCard />
+            <SmallBrandCard
+              path='url("/images/Maybelline.PNG")'
+            />
           </Link>
           <Link to="/products">
-            <SmallBrandCard />
+            <SmallBrandCard
+              path='url("/images/Dior.PNG")'
+            />
           </Link>
           <Link to="/products">
-            <SmallBrandCard />
+            <SmallBrandCard
+              path='url("/images/Revlon.PNG")'
+            />
           </Link>
         </div>
       </div>

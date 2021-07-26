@@ -10,6 +10,7 @@ import ProductTips from '../components/ProductTips';
 import Header from '../components/Header'
 import AddToCardButton from '../components/AddToCartButton'
 import Text from '../components/Text';
+import { Link } from 'react-router-dom';
 
 
 const useStyles = makeStyles(() => ({
@@ -35,22 +36,27 @@ const useStyles = makeStyles(() => ({
 
 const ProductPage = () => {
   const classes = useStyles();
-    return (
-      <div className={classes.productPage}>
-        <Header showCatalogFilters={false} text="Produto" back/>
-        <Toolbar />
-        <LargeProductCard />
-        <Text text="Batom Matte" />
-        <PriceAndEvaluation />
-        <ColorPicker />
-        <AvailabilityAndFavorites />
-        <Text text="Dicas de Influencers" />
-        <ProductTips />
+  return (
+    <div className={classes.productPage}>
+      <Header showCatalogFilters={false} text="Produto" back />
+      <Toolbar />
+      <LargeProductCard />
+      <Text text="Batom Matte" bold/>
+      <PriceAndEvaluation />
+      <ColorPicker />
+      <AvailabilityAndFavorites />
+      <Text text="Dicas de Influencers" />
+      <ProductTips />
+      <Link to='/bag'>
         <AddToCardButton />
-        <BottomNavigation />
-        <BottomNavigation />
-      </div>
-      );
+      </Link>
+      <BottomNavigation />
+      <BottomNavigation />
+      
+
+
+    </div>
+  );
 }
 
 export default ProductPage;

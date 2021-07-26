@@ -32,7 +32,7 @@ const useStyles = makeStyles({
   }
 });
 
-const ProductCard = () => {
+const ProductCard = ({path, title}) => {
   const classes = useStyles();
 
   return (
@@ -41,12 +41,12 @@ const ProductCard = () => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/images/red-lipstick.PNG"
+          image={path}
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="subtitle2" color="textSecondary" component="p" align="center">
-            Batom Matte
+            {title}
           </Typography>
           <Typography variant="subtitle1" component="h2" color="textPrimary" align="center">
             R$49,99

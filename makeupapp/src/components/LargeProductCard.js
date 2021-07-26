@@ -8,7 +8,8 @@ const useStyles = makeStyles(() => ({
         width: '90%',
         filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
         borderRadius: '30px',
-        backgroundColor: 'red',
+        backgroundImage: 'url("/images/red-lipstick.PNG")',
+        backgroundSize: 'cover',
         marginTop: '10px',
     }
   }));
