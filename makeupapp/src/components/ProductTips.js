@@ -4,7 +4,7 @@ import ProfileCircle from './ProfileCircle';
 
 const useStyles = makeStyles(() => ({
     card: {
-        height: '20vh',
+        height: '25vh',
         width: '90%',
         borderRadius: '30px',
         backgroundColor: '#F0F0F0',

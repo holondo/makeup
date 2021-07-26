@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   toolbar: {
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     alignItems: 'center',
     minHeight: props => (props.showCatalogFilters || props.showProductsFilters) ? '10px' : '',
   },
@@ -22,13 +22,13 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-const Header = ({ showCatalogFilters = false, showProductsFilters = false }) => {
+const Header = ({ showCatalogFilters = false, showProductsFilters = false , text, back}) => {
   const classes = useStyles(showCatalogFilters, showProductsFilters);
   return (
     <div className={classes.header}>
       <AppBar color="inherit" position='fixed'>
         <Toolbar className={classes.toolbar}>
-          <TopBar />
+          <TopBar text={text} back={back} />
           {[showCatalogFilters ? <CatalogFiltersBar /> : null,
           showProductsFilters ? <ProductsFiltersBar /> : null
           ]}

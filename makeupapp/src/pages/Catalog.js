@@ -40,7 +40,7 @@ const Catalog = () => {
   const classes = useStyles();
   return (
     <div className={classes.catalog}>
-      <Header showCatalogFilters={true} />
+      <Header showCatalogFilters={true} text="Catálogo"/>
       <Toolbar />
       <div style={{ height: '41px' }} className={classes.filtesBalance}>&nbsp;</div>
       <div className={classes.catalogContainer}>

@@ -13,6 +13,10 @@ import Box from '@material-ui/core/Box';
 const useStyles = makeStyles(() => ({
   fieldset: {
     marginBottom: '0',
+  },
+  ratingsContainer: {
+    display: 'flex',
+    alignItems: 'center',
   }
 }))
 
@@ -57,7 +61,7 @@ function IconContainer(props) {
 const CustomizedRatings = () => {
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.ratingsContainer}>
       <Box className={classes.fieldset} component="fieldset" mb={3} borderColor="transparent">
         <Rating
           name="customized-empty"

@@ -37,10 +37,10 @@ const ProductPage = () => {
   const classes = useStyles();
     return (
       <div className={classes.productPage}>
-        <Header showCatalogFilters={false}/>
+        <Header showCatalogFilters={false} text="Produto" back/>
         <Toolbar />
         <LargeProductCard />
-        <Text text="Batom Cremoso" />
+        <Text text="Batom Matte" />
         <PriceAndEvaluation />
         <ColorPicker />
         <AvailabilityAndFavorites />

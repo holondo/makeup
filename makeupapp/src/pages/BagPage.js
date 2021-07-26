@@ -33,7 +33,7 @@ const BagPage = () => {
   const classes = useStyles();
     return (
       <div className={classes.bag}>
-        <Header />
+        <Header text="Sacola"/>
         <Toolbar />
         <div className={classes.bagContainer}>
           <BagItemCard />

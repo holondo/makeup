@@ -8,9 +8,9 @@ import Text from './Text';
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    marginTop: '10px',
+    marginTop: '2vh',
     borderRadius: '30px',
-    height: '15vh',
+    minHeight: '15vh',
     width: '90%',
     filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
   },
@@ -22,12 +22,12 @@ const useStyles = makeStyles((theme) => ({
   content: {
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between',
-    height: '100%',
     backgroundColor: '#F0F0F0',
+    padding: '0 16px !important',
+    height: '100%'
   },
   cover: {
-    width: '20vh',
+    width: '23vh',
   },
   lastRow: {
     display: 'flex',
@@ -48,11 +48,11 @@ const BagItemCard = () => {
       />
       <div className={classes.details}>
         <CardContent className={classes.content}>
-          <Text text="Batom Matte" />
+          <Text text="Batom Matte" bold/>
           <Text text="COR: VERMELHO" />
           <div className={classes.lastRow}>
             <Text text="QUANTIDADE: 1" />
-            <Text text="R$49,99" />
+            <Text text="R$49,99" bold/>
           </div>
         </CardContent>
       </div>

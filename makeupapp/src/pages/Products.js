@@ -50,7 +50,7 @@ const Products = () => {
   const classes = useStyles();
   return (
     <div className={classes.products}>
-      <Header showProductsFilters={true} />
+      <Header showProductsFilters={true} text="Produtos" back/>
       <Toolbar />
       <div style={{ height: '41px' }} className={classes.filtesBalance}>&nbsp;</div>
       <div className={classes.brandNameContainer}>
