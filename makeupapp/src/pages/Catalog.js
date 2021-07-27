@@ -48,27 +48,32 @@ const Catalog = () => {
         <div className={classes.brandsGrid}>
           <Link to="/products">
             <SmallBrandCard
-              path='url("/images/Todas.JPG")'
+              path='/images/Todas.JPG'
+              alt='Todas'
             />
           </Link>
           <Link to="/products">
             <SmallBrandCard
-              path='url("/images/MAC.JPG")'
+              path='/images/MAC.JPG'
+              alt='MAC'
             />
           </Link>
           <Link to="/products">
             <SmallBrandCard
-              path='url("/images/Maybelline.PNG")'
+              path='/images/Maybelline.PNG'
+              alt='Maybelline New York'
             />
           </Link>
           <Link to="/products">
             <SmallBrandCard
-              path='url("/images/Dior.PNG")'
+              path='/images/Dior.PNG'
+              alt='Dior'
             />
           </Link>
           <Link to="/products">
             <SmallBrandCard
-              path='url("/images/Revlon.PNG")'
+              path='/images/Revlon.PNG'
+              alt='Revlon'
             />
           </Link>
         </div>

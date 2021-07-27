@@ -7,15 +7,14 @@ const useStyles = makeStyles(() => ({
         width: '15vh',
         borderRadius: '30px',
         filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
-        backgroundImage: props => props.path,
-        backgroundSize: 'cover',
+        objectFit: 'cover',
     }
 }));
 
-const SmallProductCard = ({path}) => {
+const SmallProductCard = ({path, alt}) => {
     const classes = useStyles({path});
     return (
-        <div className={classes.card} />
+        <img src={path} className={classes.card} alt={alt}/>
     )
 }
 

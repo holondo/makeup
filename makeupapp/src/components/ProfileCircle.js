@@ -8,17 +8,16 @@ const useStyles = makeStyles(() => ({
     width: '15vh',
     filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
     borderRadius: '100%',
-    backgroundImage: props => props.path,
-    backgroundSize: 'cover',
+    objectFit: 'cover',
     marginTop: '5px',
   }
 }));
 
-const ProfileCircle = ({ path }) => {
+const ProfileCircle = ({ path, alt }) => {
   const classes = useStyles({ path });
   return (
     <Link>
-      <div className={classes.profileCircle} />
+      <img src={path} alt={alt} className={classes.profileCircle} />
     </Link>
   )
 }

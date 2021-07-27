@@ -35,17 +35,25 @@ const Home = () => {
         <div className={classes.homeContainer}>
           <Text text="Promoção" large/>
           <ProductSection 
-            path1='url("/images/Promo 1.PNG")'
-            path2='url("/images/home1.jpg")'
-            path3='url("/images/home2.jpg")'
-            path4='url("/images/home3.jpg")'
+            path1='/images/Promo 1.PNG'
+            path2='/images/home1.jpg'
+            path3='/images/home2.jpg'
+            path4='/images/home3.jpg'
+            alt1='escolha seu brinde nas compras acima de R$199'
+            alt2='batom vermelho e base MAC'
+            alt3='batom vermelho e base Dior'
+            alt4='base rosa MAC'
           />
           <Text text="Mais Vendidos" large/>
           <ProductSection 
-            path1='url("/images/promocao2.jpg")'
-            path2='url("/images/home4.jpg")'
-            path3='url("/images/home5.jpg")'
-            path4='url("/images/home6.jpg")'
+            path1='/images/promocao2.jpg'
+            path2='/images/home4.jpg'
+            path3='/images/home5.jpg'
+            path4='/images/home6.jpg'
+            alt1='base pastel e pincel MAC'
+            alt2='kit inverson Dior'
+            alt3='kit inverno MAC'
+            alt4='palleta de sombras arcoiris MAC'
           />
           
         </div>

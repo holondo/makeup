@@ -28,9 +28,9 @@ const ProductTips = () => {
     return (
         <div className={classes.card} >
           <div className={classes.profileRow} >
-            <ProfileCircle path='url("/images/influencer1.jpg")'/>
-            <ProfileCircle path='url("/images/influencer2.jpg")'/>
-            <ProfileCircle path='url("/images/influencer3.jpg")'/>
+            <ProfileCircle path='/images/influencer1.jpg' alt="@carla_fernandez"/>
+            <ProfileCircle path='/images/influencer2.jpg' alt="@larissa_ferreira"/>
+            <ProfileCircle path='/images/influencer3.jpg' alt="@caio_andrade"/>
           </div>
         </div>
     )
