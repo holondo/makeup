@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/makeup/static/css/main.a52075e9.chunk.css",
-    "main.js": "/makeup/static/js/main.d5b3d033.chunk.js",
-    "main.js.map": "/makeup/static/js/main.d5b3d033.chunk.js.map",
-    "runtime-main.js": "/makeup/static/js/runtime-main.97865080.js",
-    "runtime-main.js.map": "/makeup/static/js/runtime-main.97865080.js.map",
-    "static/js/2.a6024ee7.chunk.js": "/makeup/static/js/2.a6024ee7.chunk.js",
-    "static/js/2.a6024ee7.chunk.js.map": "/makeup/static/js/2.a6024ee7.chunk.js.map",
-    "index.html": "/makeup/index.html",
-    "static/css/main.a52075e9.chunk.css.map": "/makeup/static/css/main.a52075e9.chunk.css.map",
-    "static/js/2.a6024ee7.chunk.js.LICENSE.txt": "/makeup/static/js/2.a6024ee7.chunk.js.LICENSE.txt"
+    "main.css": "/makeup/pages/Home/static/css/main.a52075e9.chunk.css",
+    "main.js": "/makeup/pages/Home/static/js/main.d5b3d033.chunk.js",
+    "main.js.map": "/makeup/pages/Home/static/js/main.d5b3d033.chunk.js.map",
+    "runtime-main.js": "/makeup/pages/Home/static/js/runtime-main.af056d78.js",
+    "runtime-main.js.map": "/makeup/pages/Home/static/js/runtime-main.af056d78.js.map",
+    "static/js/2.c7592c59.chunk.js": "/makeup/pages/Home/static/js/2.c7592c59.chunk.js",
+    "static/js/2.c7592c59.chunk.js.map": "/makeup/pages/Home/static/js/2.c7592c59.chunk.js.map",
+    "index.html": "/makeup/pages/Home/index.html",
+    "static/css/main.a52075e9.chunk.css.map": "/makeup/pages/Home/static/css/main.a52075e9.chunk.css.map",
+    "static/js/2.c7592c59.chunk.js.LICENSE.txt": "/makeup/pages/Home/static/js/2.c7592c59.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.97865080.js",
-    "static/js/2.a6024ee7.chunk.js",
+    "static/js/runtime-main.af056d78.js",
+    "static/js/2.c7592c59.chunk.js",
     "static/css/main.a52075e9.chunk.css",
     "static/js/main.d5b3d033.chunk.js"
   ]
